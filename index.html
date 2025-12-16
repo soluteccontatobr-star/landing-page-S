@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Solutec Soluções e Manutenção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solutec Soluções e Manutenção - Instalações elétricas, manutenção e consultoria para residências e empresas.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Solutec Soluções e Manutenção</h1>
+    <p class="tagline">Segurança, responsabilidade técnica e soluções em elétrica</p>
+</header>
+
+<nav>
+    <button class="tablink active" onclick="openTab(event, 'sobre')">Quem Somos</button>
+    <button class="tablink" onclick="openTab(event, 'servicos')">Serviços</button>
+    <button class="tablink" onclick="openTab(event, 'diferenciais')">Diferenciais</button>
+    <button class="tablink" onclick="openTab(event, 'contato')">Contato</button>
+</nav>
+
+<main>
+<section id="sobre" class="tabcontent" style="display:block;">
+    <h2>Quem Somos</h2>
+    <p>
+        A <strong>Solutec Soluções e Manutenção</strong> atua no segmento de instalações e manutenções elétricas,
+        atendendo desde clientes residenciais até empresas de pequeno, médio e grande porte.
+    </p>
+    <p>
+        Nosso trabalho é pautado pela segurança, organização, responsabilidade técnica e transparência,
+        sempre seguindo normas técnicas e boas práticas.
+    </p>
+</section>
+
+<section id="servicos" class="tabcontent">
+    <h2>Serviços</h2>
+    <ul>
+        <li>Instalações elétricas residenciais, comerciais e empresariais</li>
+        <li>Manutenção elétrica preventiva e corretiva</li>
+        <li>Montagem e adequação de quadros elétricos</li>
+        <li>Correção de instalações fora de norma</li>
+        <li>Consultoria técnica</li>
+    </ul>
+</section>
+
+<section id="diferenciais" class="tabcontent">
+    <h2>Diferenciais</h2>
+    <ul>
+        <li>Conformidade com a ABNT NBR 5410</li>
+        <li>Organização e padronização das instalações</li>
+        <li>Transparência e orientação ao cliente</li>
+        <li>Compromisso com a segurança</li>
+    </ul>
+</section>
+
+<section id="contato" class="tabcontent">
+    <h2>Contato</h2>
+    <p><strong>Telefone / WhatsApp:</strong> +55 19 98955-0865</p>
+    <p><strong>E-mail:</strong> solotec.contato.br@gmail.com</p>
+</section>
+</main>
+
+<footer>
+    <p>© 2025 - Solutec Soluções e Manutenção</p>
+</footer>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>
